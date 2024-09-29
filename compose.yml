@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  webapp:
+    image: rajendranconreg/webapp:latest
+    ports:
+      - "80:80"
+  database:
+    image: rajendranconreg/database:latest
+    environment:
+      - POSTGRES_USER=arundarasi
+      - POSTGRES_PASSWORD=rajendran
